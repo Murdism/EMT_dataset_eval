@@ -612,7 +612,7 @@ if __name__ == "__main__":
                     help='Path to output folder')
     parser.add_argument('--tracker_name', type=str,  default="byte", 
                     help='Tracker name use byte, bot or boost')
-    parser.add_argument('--gt_folder', type=str, default='emt/emt_annotations/',
+    parser.add_argument('--gt_folder', type=str, default='emt/emt_annotations/labels/',
                     help='Path to folder containing GT files')
     parser.add_argument('--use_frames', default=True,action='store_true', 
                     help='Input folder contains frame folders instead of videos')

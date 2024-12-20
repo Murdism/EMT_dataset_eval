@@ -3,7 +3,7 @@ import trackeval
 # from trackeval import Evaluator, datasets, metrics
 
 # Paths
-EMT_GT_PATH = 'emt/emt_annotations_trackeval/'  # Ground truth folder
+EMT_GT_PATH = 'emt/emt_annotations/'  # Ground truth folder
 EMT_TRACKERS_PATH = 'Trackers/'  # Tracker results folder
 
 # Tracker and dataset details

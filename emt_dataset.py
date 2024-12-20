@@ -127,7 +127,7 @@ class EMT2DBox(_BaseDataset):
 
                     # Check if the ground truth file exists for the sequence
                     if not self.data_is_zipped:
-                        curr_file = os.path.join(self.gt_fol, 'label_02', 'video_' + seq + '.txt')
+                        curr_file = os.path.join(self.gt_fol, 'labels', 'video_' + seq + '.txt')
                         print(f"\nGT file: \t{curr_file} Found!")
 
                         # Raise an exception if the ground truth file is not found
@@ -183,8 +183,6 @@ class EMT2DBox(_BaseDataset):
         [tracker_ids, tracker_classes, tracker_confidences] : list (for each timestep) of 1D NDArrays (for each det).
         [tracker_dets]: list (for each timestep) of lists of detections.
         """
-        # File location
-        # print(f"os.path.join(self.gt_fol, seq + '.txt')  # Updated path :{os.path.join(self.gt_fol, 'label_02', 'video_' + seq + '.txt')}")
         if self.data_is_zipped:
             if is_gt:
                 zip_file = os.path.join(self.gt_fol, 'data.zip')
@@ -194,7 +192,7 @@ class EMT2DBox(_BaseDataset):
         else:
             zip_file = None
             if is_gt:
-                file = os.path.join(self.gt_fol, 'label_02', 'video_' + seq + '.txt')# os.path.join(self.gt_fol, seq + '.txt')  # Updated path
+                file = os.path.join(self.gt_fol, 'labels', 'video_' + seq + '.txt')# os.path.join(self.gt_fol, seq + '.txt')  # Updated path
             else:
                 file = os.path.join(self.tracker_fol, tracker, self.tracker_sub_fol,'video_' + seq + '.txt')
 

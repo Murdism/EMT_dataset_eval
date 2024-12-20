@@ -1,6 +1,6 @@
 import os
 # Directories for ground truth and evaluation
-gt_fol = 'emt/emt_annotations_trackeval/label_02/'
+gt_fol = 'emt/emt_annotations_trackeval/labels/'
 evaluate_tracking_fol = 'emt/emt_annotations_trackeval/'
 
 # Get a list of all ground truth files in the folder
