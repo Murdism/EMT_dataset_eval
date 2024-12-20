@@ -1,7 +1,7 @@
 import os
 # Directories for ground truth and evaluation
-gt_fol = 'emt/emt_annotations_trackeval/labels/'
-evaluate_tracking_fol = 'emt/emt_annotations_trackeval/'
+gt_fol = 'emt/emt_annotations/labels/'
+evaluate_tracking_fol = 'emt/emt_annotations/'
 
 # Get a list of all ground truth files in the folder
 gt_files = [f for f in os.listdir(gt_fol) if f.endswith('.txt')]
