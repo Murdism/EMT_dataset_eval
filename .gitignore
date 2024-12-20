@@ -1,0 +1,7 @@
+emt/frames/
+emt/raw/
+ByteTrack/
+EVAL_RESULTS/
+Trackers/
+TrackEval/
+error_log.txt
